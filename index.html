@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thumbnail Extractor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Thumbnail Extractor</h1>
+      <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">🌙</button>
+    </div>
+    <input type="text" id="youtube-url" placeholder="Enter YouTube video URL">
+    <button id="extract-btn">Extract Thumbnail</button>
+    <div id="error-message" class="error-message">Invalid YouTube URL. Please try again.</div>
+    <div id="loading" class="loading-spinner"></div>
+    <div id="thumbnail-container">
+      <img id="thumbnail" alt="Thumbnail will appear here">
+      <a id="download-btn" href="#" download="thumbnail.jpg">Download Thumbnail</a>
+      <button id="copy-btn">Copy Thumbnail URL</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
